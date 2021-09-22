@@ -2,13 +2,13 @@ import yfinance as yf
 import streamlit as st
 
 st.write("""
-# Simple Stock Price App
-Shown are the stock closing price and volume of Google!
+# Stock Price App
+Shown are the stock closing price and volume of LMIRT TRUST
 """)
 
 # https://towardsdatascience.com/how-to-get-stock-data-using-python-c0de1df17e75
 #define the ticker symbol
-tickerSymbol = 'GOOGL'
+tickerSymbol = 'D5IU.SI'
 #get data on this ticker
 tickerData = yf.Ticker(tickerSymbol)
 #get the historical prices for this ticker
