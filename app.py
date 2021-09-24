@@ -15,7 +15,7 @@ tickerSymbol = 'D5IU.SI'
 #get data on this ticker
 tickerData = yf.Ticker(tickerSymbol)
 #get the historical prices for this ticker
-tickerDf = tickerData.history(period='1d', start='2010-5-31', end=today)
+tickerDf = tickerData.history(period='1m', start='2010-5-31', end=today)
 # Open	High	Low	Close	Volume	Dividends	Stock Splits
 
 st.line_chart(tickerDf.Close)
